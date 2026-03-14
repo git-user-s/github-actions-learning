@@ -1,0 +1,9 @@
+name: 02 - workflow Events
+on: push
+
+jobs:
+    echo:
+        runs-on: ununtu-latest
+        steps:
+            - name: show the trigger
+              run: echo "I am triggered by ${{github.event_name}}"
