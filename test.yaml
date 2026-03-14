@@ -1,0 +1,13 @@
+nam: test
+"name:3r3r": ewf
+config:
+  path: test
+  path2: test2
+  path3: 
+    blah: bla
+    bla2: bla2
+a:
+  - 1
+  - 2
+  - obj: val1
+    onj2: val2
