@@ -6,6 +6,15 @@ jobs:
         steps: 
             - name: Show OS
               run: |
-                echo "This jon is running in ubuntu"
+                echo "This job is running in ubuntu"
                 echo "Runner OS: $RUNNER_OS"
+    windows-hello:
+        runs-on: windows-latest
+        steps:
+            - name: Show OS
+              shell: bash
+              run: | 
+                echo "This job is running on windows"
+                echo "Runner OS: $RUNNER_OS"
+
 
