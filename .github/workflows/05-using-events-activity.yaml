@@ -2,8 +2,9 @@ name: 05 Event filters and activity types
 on:
     pull_request:
         types:
-            - opened
-            - synchronize
+            # - opened
+            # - synchronize
+            - closed
         branches:
             - main
 jobs:
@@ -11,7 +12,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: run1
-              run: echo "Running whrn PR is opeped ans synchronized"
+              run: echo "Running whrn PR is closed"
             
 
 
